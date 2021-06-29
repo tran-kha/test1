@@ -1,0 +1,6 @@
+{
+  "name": "@vgm/xplat-ionic-scss",
+  "version": "1.0.0",
+  "main": "index",
+  "typings": "index.d.ts"
+}

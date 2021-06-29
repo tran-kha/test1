@@ -1,0 +1,21 @@
+<ion-header>
+  <vgm-desktop-page-header></vgm-desktop-page-header>
+  <vgm-mobile-page-header></vgm-mobile-page-header>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-margin ion-margin-top" *ngIf="topicCategory !== null">
+    <!-- <h1>{{topicCategory.name || 'Loading'}}</h1> -->
+    <!-- <vgm-video-category
+      *ngFor="let category of topicCategory.list"
+      [name]="category.name"
+      [itemList]="category.items.slice(1, 4)"
+    ></vgm-video-category> -->
+    <vgm-mobile-video-category
+      *ngFor="let category of topicCategory.list"
+      [name]="category.name"
+      [itemList]="category.items"
+    >
+    </vgm-mobile-video-category>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,21 @@
+{
+  "intro": {
+    "title": "CHƯƠNG TRÌNH HỌC BIẾT PHÚC ÂM<br/> ĐA PHƯƠNG TIỆN CHO NGƯỜI VIỆT NAM",
+    "subtitle": "VGM là chương trình rao truyền Phúc Âm và lẽ thật của Thánh Kinh cho mọi người không phân biệt tôn giáo, hệ phái, trình độ, lứa tuổi, người có niềm tin hay không có niềm tin. Mọi người đều được tự do tiếp cận, chọn lựa và tìm hiểu vấn đề mình mong muốn. "
+  },
+  "tabs": {
+    "video": "Video",
+    "audio": "Audio",
+    "favorite": "Yêu thích",
+    "download": "Danh sách"
+  },
+  "component": {
+    "seeAll": "Xem tất cả"
+  },
+  "msg": {
+    "notfound": "404 - PAGE NOT FOUND"
+  },
+  "input": {
+    "search": "Tìm nhanh"
+  }
+}

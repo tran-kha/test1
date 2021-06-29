@@ -1,0 +1,31 @@
+.mobile-video-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  //   height: 51px;
+  width: 100%;
+  padding: 16px;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  .video-item-list {
+    display: flex;
+    flex-direction: start;
+    padding: 0;
+    position: relative;
+  }
+  .video-item {
+    display: inline-block;
+    // font-family: 'Open Sans';
+    // font-size: 14px;
+    // min-width: 200px;
+    margin-right: 20px;
+  }
+}
+
+.mobile-video-category::-webkit-scrollbar {
+  display: none;
+}

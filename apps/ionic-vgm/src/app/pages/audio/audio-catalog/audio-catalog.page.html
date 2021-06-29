@@ -1,0 +1,17 @@
+<ion-header>
+  <vgm-desktop-page-header></vgm-desktop-page-header>
+  <vgm-mobile-page-header></vgm-mobile-page-header>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-margin ion-margin-top" *ngIf="topicCategory !== null">
+    <vgm-mobile-audio-category
+      *ngFor="let category of topicCategory.list"
+      [name]="category.name"
+      [childCount]="category.count !== 0 ? category.count + ' nội dung': ''"
+      [href]="category.href"
+      [avatar]="category.avatar"
+    >
+    </vgm-mobile-audio-category>
+  </ion-grid>
+</ion-content>

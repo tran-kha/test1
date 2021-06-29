@@ -1,0 +1,64 @@
+<ion-content padding>
+  <div style="height: 100%; display: flex" class="ion-align-items-center">
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="auto">
+          <ion-img
+            class="responsive-logo"
+            src="assets/imgs/logo-vgm.svg"
+          ></ion-img>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center ion-margin-top">
+        <ion-col class="ion-margin-top">
+          <ion-text color="dark">
+            <h5
+              class="ion-text-center"
+              style="
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 14px;
+              "
+              [innerHTML]="'intro.title' | translate"
+            ></h5>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+
+      <ion-row
+        class="ion-justify-content-center ion-margin-horizontal ion-margin-top"
+      >
+        <ion-col size-md="6">
+          <ion-text color="medium">
+            <p
+              class="ion-text-center"
+              style="font-family: 'Open Sans'; font-size: 14px"
+              [innerHTML]="'intro.subtitle' | translate"
+            ></p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+
+      <ion-row
+        class="ion-justify-content-center ion-margin-horizontal ion-margin-top"
+      >
+        <ion-col size="auto">
+          <ion-button
+            style="border-radius: 4px; width: 228px"
+            color="primary"
+            mode="ios"
+            (click)="handleEnter()"
+            [disabled]="!(dataFetchService.whenInitialized$ | async)"
+            >{{
+              !(dataFetchService.whenInitialized$ | async)
+                ? 'ĐANG THIẾT LẬP KẾT NỐI...'
+                : 'TIẾP TỤC VÀO VGM'
+            }}
+            <ion-icon slot="end" name="enter-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

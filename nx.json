@@ -1,0 +1,79 @@
+{
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "vgm",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "vgm": {
+      "tags": []
+    },
+    "vgm-e2e": {
+      "tags": [],
+      "implicitDependencies": ["vgm"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    },
+    "xplat-core": {
+      "tags": []
+    },
+    "xplat-features": {
+      "tags": []
+    },
+    "xplat-scss": {
+      "tags": []
+    },
+    "xplat-utils": {
+      "tags": []
+    },
+    "xplat-ionic-core": {
+      "tags": []
+    },
+    "xplat-ionic-features": {
+      "tags": []
+    },
+    "xplat-ionic-scss": {
+      "tags": []
+    },
+    "xplat-web-core": {
+      "tags": []
+    },
+    "xplat-web-features": {
+      "tags": []
+    },
+    "xplat-web-scss": {
+      "tags": []
+    },
+    "xplat-electron-core": {
+      "tags": []
+    },
+    "ionic-vgm": {
+      "tags": []
+    },
+    "electron-vgm": {
+      "tags": []
+    }
+  }
+}

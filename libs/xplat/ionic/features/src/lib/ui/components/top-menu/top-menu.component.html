@@ -1,0 +1,19 @@
+<ion-slides
+  [options]="{
+    slidesPerView: 'auto',
+    zoom: false,
+    grabCursor: true,
+    autoHeight: true
+  }"
+  class="top-menu ion-hide-lg-up"
+>
+  <ion-slide *ngFor="let item of menuList; index as i" class="top-menu-list">
+    <div
+      [routerLink]="['/muc-luc', home, 'catalog', item.href]"
+      routerLinkActivate="activated"
+      [ngClass]="{ 'top-menu-item': true }"
+    >
+      {{ item.value }}
+    </div>
+  </ion-slide>
+</ion-slides>

@@ -1,0 +1,47 @@
+video {
+  width: 100%;
+  background: black;
+}
+
+ion-content {
+  --background: var(--ion-color-light);
+}
+
+.title {
+  color: rgba(0, 0, 0, 0.753);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  width: 200px;
+  height: 48px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: static;
+  &:hover {
+    color: #303bcf;
+  }
+}
+
+.time-video {
+  position: static;
+  width: 26px;
+  height: 14px;
+  left: 0px;
+  top: 22px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  /* identical to box height */
+
+  color: #868686;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 6px 0px;
+}

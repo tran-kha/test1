@@ -1,0 +1,17 @@
+<vgm-top-menu home="audio" [menuList]="audioList"></vgm-top-menu>
+<ion-split-pane contentId="main">
+  <ion-menu side="start" contentId="main">
+    <ion-header mode="ios"></ion-header>
+    <ion-content>
+      <ion-list mode="ios" lines="inset" inset>
+        <ion-item
+          *ngFor="let item of audioList; index as i"
+          [routerLink]="['/muc-luc', 'audio', 'catalog', item.href]"
+          routerLinkActivate="activated"
+          >{{ item.value }}</ion-item
+        >
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet mode="ios" id="main"></ion-router-outlet>
+</ion-split-pane>

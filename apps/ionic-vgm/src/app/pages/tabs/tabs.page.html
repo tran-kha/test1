@@ -1,0 +1,42 @@
+<div>
+  <vgm-audio-player-widget></vgm-audio-player-widget>
+  <ion-tabs>
+    <ion-tab-bar mode="ios" slot="bottom">
+      <ion-tab-button class="hide-when-sm" tab="schedule">
+        <ion-img src="assets/imgs/logo-vgm.svg"></ion-img>
+      </ion-tab-button>
+
+      <ion-tab-button tab="video">
+        <div
+          class="icon-svg colorBase"
+          style="-webkit-mask-image: url(assets/icon/IconL/Light/Video.svg)"
+        ></div>
+        <ion-label>{{'tabs.video' | translate}}</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="audio">
+        <div
+          class="icon-svg colorBase"
+          style="-webkit-mask-image: url(assets/icon/IconL/Light/Audio.svg)"
+        ></div>
+        <ion-label>{{'tabs.audio' | translate}}</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="favorite">
+        <div
+          class="icon-svg colorBase"
+          style="-webkit-mask-image: url(assets/icon/IconL/Light/Heart.svg)"
+        ></div>
+        <ion-label>{{'tabs.favorite' | translate}}</ion-label>
+      </ion-tab-button>
+
+      <!-- <ion-tab-button tab="download">
+        <div
+          class="icon-svg colorBase"
+          style="-webkit-mask-image: url(assets/icon/IconL/Light/Document.svg)"
+        ></div>
+        <ion-label>{{'tabs.download' | translate}}</ion-label>
+      </ion-tab-button> -->
+    </ion-tab-bar>
+  </ion-tabs>
+</div>

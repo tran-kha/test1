@@ -1,0 +1,16 @@
+<ion-header>
+  <vgm-desktop-page-header></vgm-desktop-page-header>
+  <vgm-mobile-page-header></vgm-mobile-page-header>
+</ion-header>
+
+<ion-content>
+  <ion-grid *ngIf="topicCategory!==null" class="ion-margin ion-margin-top">
+    <vgm-audio-thumb-card
+      [title]="topicCategory.name"
+      [subtitle]="topicCategory.count + ' bài'"
+      [avatar]="topicCategory.avatar"
+      [isHighlight]="true"
+    ></vgm-audio-thumb-card>
+    <vgm-audio-play-list [list]="topicCategory.list"></vgm-audio-play-list>
+  </ion-grid>
+</ion-content>

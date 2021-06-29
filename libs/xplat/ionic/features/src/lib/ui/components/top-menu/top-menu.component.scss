@@ -1,0 +1,37 @@
+.top-menu {
+  background-color: var(--ion-color-primary-contrast);
+  position: fixed;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  height: 51px;
+  width: 100%;
+  padding: 16px;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+  .top-menu-list {
+    display: flex;
+    flex-direction: start;
+    padding: 0;
+    position: relative;
+    margin-right: 32px;
+    width: auto;
+  }
+  .top-menu-item {
+    display: inline-block;
+    // font-family: 'Open Sans';
+    font-size: 14px;
+    // min-width: 80px;
+    // margin-right: 20px;
+  }
+}
+.top-menu::-webkit-scrollbar {
+  display: none;
+}
